@@ -6,4 +6,4 @@ uint8 MASK_PITCH = 16
 uint8 MASK_ROLL = 32
 
 uint8 mask
-geometry_msgs/Pose pose
+PoseEuler pose
