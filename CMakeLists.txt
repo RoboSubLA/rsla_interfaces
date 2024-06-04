@@ -16,6 +16,8 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/autonomy/EulerAngles.msg"
+  "msg/autonomy/PoseEuler.msg"
   "msg/autonomy/PoseWithMask.msg"
   "msg/autonomy/TwistWithMask.msg"
   "msg/controls/ControllerTelemetry.msg"
