@@ -16,11 +16,14 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/autonomy/EulerAngles.msg"
+  "msg/autonomy/PoseEuler.msg"
   "msg/autonomy/PoseWithMask.msg"
   "msg/autonomy/TwistWithMask.msg"
   "msg/controls/ControllerTelemetry.msg"
   "msg/controls/PID.msg"
   "msg/localization/DVL.msg"
+  "msg/localization/Imu.msg"
   "msg/localization/Sonar.msg"
   "msg/vision/Detection.msg"
   "msg/vision/DetectionArray.msg"
