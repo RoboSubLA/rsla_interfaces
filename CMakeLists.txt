@@ -23,6 +23,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/controls/ControllerTelemetry.msg"
   "msg/controls/PID.msg"
   "msg/localization/DVL.msg"
+  "msg/localization/Imu.msg"
   "msg/localization/Sonar.msg"
   "msg/vision/Detection.msg"
   "msg/vision/DetectionArray.msg"
