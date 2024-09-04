@@ -1,7 +1,10 @@
 uint32 id
 float32 confidence
 
-float64 ang_x
-float64 ang_y
+bool detected
+uint32 millis_since_last_detected
 
-float64 distance
+float32 ang_x
+float32 ang_y
+
+float32 distance

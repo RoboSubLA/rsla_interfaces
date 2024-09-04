@@ -6,4 +6,4 @@ uint8 MASK_PITCH = 16
 uint8 MASK_YAW = 32
 
 uint8 mask
-PoseEuler cmd
+geometry_msgs/Wrench cmd

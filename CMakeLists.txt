@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.5)
 project(rsla_interfaces)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -16,8 +16,11 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/autonomy/EulerAngles.msg"
+  "msg/autonomy/PoseEuler.msg"
   "msg/autonomy/PoseWithMask.msg"
   "msg/autonomy/TwistWithMask.msg"
+  "msg/autonomy/WrenchWithMask.msg"
   "msg/controls/ControllerTelemetry.msg"
   "msg/controls/PID.msg"
   "msg/localization/DVL.msg"
@@ -38,5 +41,7 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+ament_export_dependencies(rosidl_default_runtime)
 
 ament_package()
